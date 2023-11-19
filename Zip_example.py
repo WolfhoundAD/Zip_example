@@ -1,6 +1,8 @@
 import zipfile
 import os
-
+#при запуске программы создаются две папки - my_folder и extracted_folder, если они еще не существуют в текущей директории. Далее в папке my_folder создается текстовый файл sample.txt
+#с предопределенным текстом. Файлы из папки my_folder, включая созданный текстовый файл, сжимаются в ZIP-архив compressed.zip с использованием модуля zipfile. Содержимое архива compressed.zip
+#извлекается в папку extracted_folder с помощью функции extract_zip. В консоли выводится список файлов внутри архива compressed.zip с помощью функции list_files_in_zip.
 def create_folders():
     # Создание папок для примера
     folders = ['my_folder', 'extracted_folder']
